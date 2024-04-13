@@ -1,0 +1,20 @@
+{
+  "name": "nodeserver",
+  "homepage": "https://python0220.github.io/ChatApp/",
+  "version": "1.0.0",
+  "description": "created a chat application using node.js and socket.io and nodemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "nodemon": "^3.1.0",
+    "socket.io": "^4.7.5"
+  }
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgb(92,100,221) , rgb(109 32, 239));
+
+    overflow: hidden;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Heading{
+    font-size: 22px;
+    color: black;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.msg-container{
+    width: 100%;
+    height: 80%;
+
+    border: 2px solid black;
+    border-radius: 4px;
+
+    padding: 15px 30px;
+
+    overflow-y: scroll;
+}
+.msg-container::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 10px;
+}
+
+.msg-container::-webkit-scrollbar-thumb{
+    background-color: #14c1bb;
+    border-radius: 10px;
+}
+
+.message-for-users{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    
+}
+
+.msg{
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 1.7em;
+    text-wrap: wrap;
+
+    max-width: 45%;
+    min-width: 5%;
+
+    background: #47E563;
+    text-align: center;
+    border: 2px solid #338947;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.msg .user-time{
+    font-size: 14px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+.recieved-msg{
+    float: left;
+    clear: both;
+    
+    background-color: #E5477A;
+    border: #89314d;
+}
+
+.send-msg{
+    float: right;
+    clear: both;
+}
+
+.user-joined{
+    float: left;
+    clear: both;
+
+    margin-bottom: 10px;
+    background-color: #14c1bb;
+    border: 2px solid #18bab5;
+}
+
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 10%;
+}
+
+.send-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.messageInp{
+    width: 93%;
+    height: 80%;
+    
+    padding: 5px 20px;
+
+    outline: none;
+    border: none;
+
+    border-radius: 12px 0 0 12px;
+    background-color: #f3b0a1;
+    border: 1px solid #E56347;
+    color: black;
+    font-size: 18px;
+    
+    
+}
+
+.send{
+    width: 10%;
+    height: 80%;
+    font-size: 1rem;
+    
+    border-radius: 0 12px 12px 0;
+    padding: 3px;
+    
+    border: 1px solid #E56347;
+    background-color: #f3b0a1;
+    outline: none;
+
+
+}
+
+.send:active{
+    transform: translateY(1px);
+}
