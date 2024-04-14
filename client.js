@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8000/');
+const socket = io('https://test-chat-khaki.vercel.app/');
 
 const form = document.getElementsByClassName('send-container')
 const messageInput = document.getElementsByClassName('messageInp')
