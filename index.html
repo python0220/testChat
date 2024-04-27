@@ -6,7 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./chat.ico" type="image/icon_type">
-  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <script defer src="https://112m1xb2-8000.inc1.devtunnels.ms/socket.io/socket.io.js"></script>
   <script defer src="/script.js" type="module" ></script>
   <script defer src="/client.js" type="module"></script>
 
@@ -16,7 +16,8 @@
       <form id="loginform" >
         <input type="text" placeholder="Enter your username" id="username">
         <input type="text"  placeholder="Enter your password" id="password">
-        <input type="file" id="usericon" accept="image/png, image/gif, image/jpeg">
+        <label for="usericon">Select a Picture for your id</label>
+        <input type="file" id="usericon" accept="image/png, image/gif, image/jpeg" >
         <input type="submit" id="sub-btn">
       </form>
     </div>
